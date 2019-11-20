@@ -1,0 +1,10 @@
+
+.page {
+    background: $background;
+    &__content {
+        padding: 8rem;
+        @include respond(phone) {
+            padding: 6rem 2rem;
+        }
+    }
+}

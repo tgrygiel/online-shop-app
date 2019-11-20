@@ -1,0 +1,18 @@
+@import '../../../assets/styles/main.scss';
+
+.home {
+    @include flex(flex-start, flex-start, row);
+    @include respond(phone) {
+        display: block;
+    }
+    &__cart {
+
+    }
+    &__products {
+        @include flex(flex-start, flex-start, row);
+        flex-wrap: wrap;
+        @include respond(phone) {
+            margin-top: 2rem;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@charset 'utf-8';
+html {
+  font-family: $main-font;
+  font-weight: $main-weight;
+  font-size: $browser-font;
+  transition: 300ms;
+  @include respond(tab-land) {
+    font-size: $browser-tab-land;
+  }
+  @include respond(tab-port) {
+    font-size: $browser-tab-port;
+  }
+  @include respond(phone) {
+    font-size: $browser-phone;
+  }
+  @include respond(big-desktop) {
+    font-size: $browser-big-screen;
+  }
+}
+
+body {
+  font-family: $main-font;
+  font-weight: $main-weight;
+  font-size: $font-size;
+}
+
+p, td {
+  line-height: 1.3;
+  word-break: break-all;
+  @include respond(phone) {
+    line-height: 1.5
+  }
+}

@@ -1,0 +1,14 @@
+<div class="product-detail" *ngIf="product$ | async as product">
+    <img [src]="product.imageUrl" alt="" class="product-detail__image">
+    <div class="product-detail__content">
+        <div class="product-detail__title">
+            {{ product.title }}        
+        </div>
+        <div class="product-detail__description">
+            <p class="product-detail__description--label">
+                {{ product.description }}
+            </p>
+            <button class="product-detail__description--button" (click)="onAddToCart()">Add to Cart</button>
+        </div>
+    </div>
+</div>

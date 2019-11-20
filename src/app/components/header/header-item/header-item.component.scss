@@ -1,0 +1,17 @@
+@import '../../../../assets/styles/main';
+
+
+.header-item {
+    margin-right: 3.5rem;
+    a {
+        font-weight: 600;
+        color: $dark-text;
+        &:hover {
+            color: $light-blue;
+        }
+    }
+}
+
+.active-link {
+    color: $dark-blue!important;
+}

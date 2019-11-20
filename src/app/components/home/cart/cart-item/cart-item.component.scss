@@ -1,0 +1,11 @@
+@import '../../../../../assets/styles/main.scss';
+
+.cart-item {
+    background: $dark-blue;
+    padding: .6rem;
+    margin-bottom: .6rem;
+    &__quantity {
+        margin-right: .6rem;
+        color: $accent;
+    }
+}

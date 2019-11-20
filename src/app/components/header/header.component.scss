@@ -1,0 +1,23 @@
+@import '../../../assets/styles/main';
+
+.header-container {
+    width: 100%;
+    background: $background;
+    border-bottom: 1px solid $gray;
+}
+
+.header {
+    height: 9rem;
+    margin: 0rem 8rem;
+    @include flex(center, space-between, row);
+    @include respond(phone) {
+        margin: 0 2rem;
+    }
+    &__logo {
+        font-size: $font-size-logo;
+        color: $light-text;
+    }
+    &_items {
+        @include flex(center, flex-end, row);
+    }
+}

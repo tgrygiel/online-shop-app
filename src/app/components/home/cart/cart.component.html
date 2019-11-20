@@ -1,0 +1,19 @@
+<div class="cart-wrapper">
+    <div class="cart-wrapper__contact">
+        <div class="cart-wrapper__title">Contact</div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab commodi inventore, illum officia reprehenderit maxime, quia soluta quae dolores harum odit sit esse, deleniti at? Quis quo est vero iusto.</p>
+    </div>
+    <div class="cart-wrapper__cart">
+        <div class="cart-wrapper__title">Cart</div>
+        <div class="cart">
+            <div class="cart__list" *ngIf="(cart$ | async)?.items?.length; else emptyCart">
+                <app-cart-item  *ngFor="let item of (cart$ | async)?.items" [item]="item"></app-cart-item>
+            </div>
+            <ng-template #emptyCart>
+                <div class="cart__empty">
+                    <p>Cart is empty</p>
+                </div>
+            </ng-template>
+        </div>
+    </div>
+</div>

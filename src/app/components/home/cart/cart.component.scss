@@ -1,0 +1,39 @@
+@import '../../../../assets/styles/main.scss';
+
+.cart-wrapper {
+    width: 25rem;
+    background: $light-blue;
+    padding: 2rem;
+    color: $white;
+    @include respond(phone) {
+        width: inherit;    
+    }
+
+    &__contact {
+        p {
+            opacity: .7;
+        }
+    }
+
+    &__cart {
+    }
+
+    &__title {
+        font-weight: 600;
+    }
+
+    .cart {
+        width: 100%;
+        min-height: 15rem;
+        border: 1px dashed $white;
+        margin-top: 2rem;
+        &__empty {
+            height: 15rem;
+            @include flex(center, center, row);
+            opacity: .7;
+        }
+        &__list {
+            padding: 1rem;
+        }
+    }
+}

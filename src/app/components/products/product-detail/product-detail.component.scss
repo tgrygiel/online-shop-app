@@ -1,0 +1,38 @@
+@import '../../../../assets/styles/main.scss';
+
+.product-detail {
+    margin-left: 4rem;
+    width: 100%;
+    @include respond(phone) {
+        margin-left: 0;
+        margin-top: 4rem;
+    }
+    &__image {
+        width: inherit
+    }
+    &__content {
+        background: $light-blue;
+        padding: 4rem;
+    }
+    &__title {
+        color: $white;
+        font-weight: 600;
+        font-size: $font-size-small-header;
+    }
+
+    &__description {
+        &--label {
+            color: $white;
+            opacity: .7;
+        }
+        &--button {
+            padding: 1rem 4rem;
+            background: $accent;
+            font-weight: 600;
+            font-size: $font-size-content;
+            color: $white;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
