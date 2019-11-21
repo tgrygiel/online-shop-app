@@ -8,7 +8,16 @@
         margin-top: 4rem;
     }
     &__image {
-        width: inherit
+        width: inherit;
+        background: $white;
+        max-height: 50rem;
+        @include flex(center, center, row);
+        img {
+            max-height: inherit;
+            width: auto;
+            max-width: 100%;
+        }
+        // max-height: 70rem;
     }
     &__content {
         background: $light-blue;

@@ -1,10 +1,47 @@
 
 .page {
     background: $background;
+    min-height: calc(100vh - 9rem - 1px);
     &__content {
         padding: 8rem;
         @include respond(phone) {
             padding: 6rem 2rem;
+        }
+    }
+    &--centralize {
+        @include flex(center, center, row);
+    }
+
+    .centralize-content {
+        background: $white;
+        padding: 5rem 5%;
+        width: 30%;
+        @include respond(phone) {
+            width: 80%;
+        }
+        &__icon {
+            @include flex(center, center, row);
+            svg {
+                padding: 2rem;
+                width: 5rem;
+                height: 5rem;
+                fill: $light-blue;
+            }
+        }
+        &__title {
+            width: 100%;
+            text-align: center;
+            color: $dark-text;
+            font-size: $font-size-logo;
+            font-weight: 600;
+            margin: 4rem 0;
+        }
+        &__description {
+            color: $light-text;
+            font-size: $font-size-main;
+            text-align: justify;
+            margin-bottom: 2rem;
+            text-align: center;
         }
     }
 }

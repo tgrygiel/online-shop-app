@@ -9,7 +9,7 @@
     box-shadow: 1px 1px 5px $gray;
     cursor: pointer;
     &:hover > .product__title {
-        color: $dark-blue;
+        color: $light-blue;
     }
     @include respond(phone) {
         width: 100%;

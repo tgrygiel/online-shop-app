@@ -19,6 +19,7 @@ import { reducers, metaReducers } from './store/reducers';
 import { EffectsModule } from '@ngrx/effects';
 import { effects } from './store/effects';
 import { CartItemComponent } from './components/home/cart/cart-item/cart-item.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { CartItemComponent } from './components/home/cart/cart-item/cart-item.co
   imports: [
     BrowserModule,
     HttpClientModule,
+    NgxSpinnerModule,
     RouterModule.forRoot(routes),
     StoreModule.forRoot(reducers, {
       metaReducers,

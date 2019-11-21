@@ -4,5 +4,8 @@
             <app-cart></app-cart>
         </div>
         <router-outlet></router-outlet>
+        <ngx-spinner [fullScreen]="false" type="ball-clip-rotate-multiple" size="medium">
+            <p class="loading-label">Loading</p>
+        </ngx-spinner>
     </div>
 </div>

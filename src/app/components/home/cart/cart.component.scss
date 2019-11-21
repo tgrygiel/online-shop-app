@@ -15,20 +15,28 @@
         }
     }
 
-    &__cart {
-    }
-
     &__title {
         font-weight: 600;
     }
 
+    &__total-price {
+        padding: 2rem 0 1rem 0;
+        font-weight: 600;
+        font-size: $font-size-content;
+        @include flex(center, flex-end, row);
+        &--accent {
+            color: $accent;
+            margin-left: .6rem;
+        }
+    }
+
     .cart {
         width: 100%;
-        min-height: 15rem;
+        min-height: 10rem;
         border: 1px dashed $white;
         margin-top: 2rem;
         &__empty {
-            height: 15rem;
+            height: 10rem;
             @include flex(center, center, row);
             opacity: .7;
         }

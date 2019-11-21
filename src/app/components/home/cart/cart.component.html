@@ -16,4 +16,7 @@
             </ng-template>
         </div>
     </div>
+    <div class="cart-wrapper__total-price" *ngIf="(cart$ | async)?.items?.length">
+        <span>Total price: </span> <span class="cart-wrapper__total-price--accent">{{ (cart$ | async)?.totalSum }}zł</span>
+    </div>
 </div>

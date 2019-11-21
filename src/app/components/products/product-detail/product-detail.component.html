@@ -1,5 +1,8 @@
 <div class="product-detail" *ngIf="product$ | async as product">
-    <img [src]="product.imageUrl" alt="" class="product-detail__image">
+    <div class="product-detail__image">
+        <img [src]="product.imageUrl" alt="">
+    </div>
+   
     <div class="product-detail__content">
         <div class="product-detail__title">
             {{ product.title }}        
