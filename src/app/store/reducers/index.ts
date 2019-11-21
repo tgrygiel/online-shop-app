@@ -4,7 +4,6 @@ import { ActionReducerMap, MetaReducer } from '@ngrx/store';
 import { Product } from '../../model/Product';
 import { Cart } from '../../model/Cart';
 import { ShopActions, ShopActionTypes } from '../actions/shop.actions';
-import { CartItem } from 'src/app/model/CartItem';
 
 export interface ShopState {
   products: {
@@ -85,10 +84,5 @@ export function productReducer(state: ShopState = initialShopState, action: Shop
 export const reducers: ActionReducerMap<AppState> = {
   shop: productReducer,
 };
-
-// export const selectWeather = (state: AppState) => state.weather.weatherData;
-
-// export const selectError = (state: AppState) => state.location.error;
-
 
 export const metaReducers: MetaReducer<AppState>[] = !environment.production ? [] : [];

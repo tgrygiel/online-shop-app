@@ -45,7 +45,7 @@ export class ProductDetailComponent implements OnInit {
         catchError(() => of(false))
       ).subscribe((isLoading) => {
         this.isBlocked = isLoading;
-        isLoading ? this.spinner.show() : this.spinner.hide()
+        isLoading ? this.spinner.show() : this.spinner.hide();
       })
     );
   }
